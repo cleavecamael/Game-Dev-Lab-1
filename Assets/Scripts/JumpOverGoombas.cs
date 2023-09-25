@@ -9,8 +9,6 @@ public class JumpOverGoomba : MonoBehaviour
     public TextMeshProUGUI scoreText;
     private bool onGroundState;
     public GameObject enemies;
-    [System.NonSerialized]
-    public int score = 0; // we don't want this to show up in the inspector
 
     private bool countScoreState = false;
     public Vector3 boxSize;
@@ -43,11 +41,12 @@ public class JumpOverGoomba : MonoBehaviour
         {
             foreach (Transform child in enemies.transform)
             {
+              
                 if (Mathf.Abs(transform.position.x - child.position.x) < 0.5f)
                 {
                     countScoreState = false;
-                    score++;
-                    scoreText.text = "Score: " + score.ToString();
+                    Variables.score++;
+                    scoreText.text = "Score: " + Variables.score.ToString();
                   
                 }
             }
@@ -64,11 +63,12 @@ public class JumpOverGoomba : MonoBehaviour
     {
         if (Physics2D.BoxCast(transform.position, boxSize, 0, -transform.up, maxDistance, layerMask))
         {
+            
             return true;
         }
         else
         {
-            
+          
             return false;
         }
     }

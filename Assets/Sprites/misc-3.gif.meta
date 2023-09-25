@@ -185,10 +185,10 @@ TextureImporter:
       name: wood_block
       rect:
         serializedVersion: 2
-        x: 374
+        x: 373
         y: 1189
-        width: 15
-        height: 17
+        width: 16
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,13 +203,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: power_block
+      name: power_block_1
       rect:
         serializedVersion: 2
         x: 372
-        y: 1077
+        y: 1076
         width: 16
-        height: 15
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -412,6 +412,195 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: moving_platform
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 1201
+        width: 48
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f290eab95213ea34b9dd95993c812325
+      internalID: 1728760274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: power_block_2
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 1076
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 027e77296b88c9d4785a0b179ac7528d
+      internalID: -1760225044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: power_block_3
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 1076
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6becc6d0002ac94e94b222eaea57026
+      internalID: -761413005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: misc-3_0
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 1086
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cf86fc9e1a534946affbbbe3286a4c8
+      internalID: 1985084804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coin_small_1
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 1092
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87d77380262688949bae82abaa659be1
+      internalID: -909479643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coin_small_2
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 1092
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d331c1b0651bcd488680aee16537b80
+      internalID: 1751142396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coin_small_3
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 1092
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 150c8166a0c415d4586026140f012192
+      internalID: -133748186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coin_small_4
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 1092
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e6933e1bddf58140a1278d1c828e11d
+      internalID: 1740059494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: power_block_used
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 1171
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8de2fd8d4103e34090fc0e849755e93
+      internalID: -1256958601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -426,13 +615,22 @@ TextureImporter:
       cloud_one: -1617591309
       cloud_three: 620410840
       cloud_two: -1486077952
+      coin_small_1: -909479643
+      coin_small_2: 1751142396
+      coin_small_3: -133748186
+      coin_small_4: 1740059494
       goomba_walkright: 2085230104
       ground_block_brown: 1277721413
       hill_large: 140605683
       hill_small: 1410179252
+      misc-3_0: 1985084804
+      moving_platform: 1728760274
       pipe_connector: 1725740789
       pipe_out_up: -1827339111
-      power_block: -1893004866
+      power_block_1: -1893004866
+      power_block_2: -1760225044
+      power_block_3: -761413005
+      power_block_used: -1256958601
       shrub_1: -1284382005
       shrub_2: 1364788184
       shrub_3: 2134905648
