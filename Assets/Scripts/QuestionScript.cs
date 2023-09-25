@@ -27,16 +27,16 @@ public class QuestionScript : MonoBehaviour
         questionAudio = GetComponent<AudioSource>();
         questionSprite = blockObject.GetComponent<SpriteRenderer>();
         questionAnimator = blockObject.GetComponent<Animator>();
-      
+
     }
 
     public void Reset()
     {
- 
+
         coinHit = false;
         resetBlock = false;
         questionBlockBody.bodyType = RigidbodyType2D.Dynamic;
-        
+
         questionAnimator.enabled = true;
         questionAnimator.SetTrigger("reset");
         coinObject.SetActive(true);
@@ -49,12 +49,12 @@ public class QuestionScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
         if (questionBlockBody.velocity.magnitude > 0.2 && !coinHit)
         {
             blockHit();
         }
-        
+
     }
 
     void FixedUpdate()
@@ -77,6 +77,6 @@ public class QuestionScript : MonoBehaviour
         questionAnimator.enabled = false;
         questionSprite.sprite = usedBlock;
         coinHit = true;
-        
+
     }
 }

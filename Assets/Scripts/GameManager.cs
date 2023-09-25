@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,15 +12,19 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public GameObject player;
     public GameObject enemies;
-    public GameObject powerBlocks;
-    public GameObject coinBlocks;
+
     public Camera gameCamera;
+    public int score = Variables.score;
     //global variables
-    
+    public UnityEvent gameStart;
+    public UnityEvent gameRestart;
+    public UnityEvent<int> scoreChange;
+    public bool alive = true;
     // Start is called before the first frame update
     void Start()
     {
-        
+        gameStart.Invoke();
+        Time.timeScale = 1.0f;
     }
 
     // Update is called once per frame
@@ -41,30 +47,22 @@ public class GameManager : MonoBehaviour
     }
     public void ResetGame()
     {
-        gameCamera.transform.position = new Vector3(0, 0, -10);
-        player.GetComponent<PlayerMovement>().Reset();
-        foreach (Transform enemy in enemies.transform){
-
-            enemy.gameObject.GetComponent<EnemyMovement>().Reset();
-        }
-        foreach (Transform powerBlock in powerBlocks.transform)
-        {
-
-            powerBlock.gameObject.GetComponent<QuestionScript>().Reset();
-        }
-        foreach (Transform coinBlock in coinBlocks.transform)
-        {
-
-            coinBlock.gameObject.GetComponent<CoinBlockScript>().Reset();
-        }
-
-        // reset score
-        scoreText.text = "Score: 0";
-       
+        gameRestart.Invoke();
         // reset score
         Variables.score = 0;
-        GameOverPanel.SetActive(false);
+        
     }
+    public void IncreaseScore(int increment)
+    {
+        score += increment;
+        SetScore(score);
+    }
+
+    public void SetScore(int score)
+    {
+        scoreChange.Invoke(score);
+    }
+
 
 
 }

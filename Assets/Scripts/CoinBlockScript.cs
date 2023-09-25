@@ -24,7 +24,7 @@ public class CoinBlockScript : MonoBehaviour
 
     }
 
-  
+
     // Update is called once per frame
     void Update()
     {
@@ -39,7 +39,7 @@ public class CoinBlockScript : MonoBehaviour
     void FixedUpdate()
     {
         //remove items once finished moving
-        
+
         if (resetBlock && (Vector3.Distance(coinObject.transform.localPosition, Vector3.zero) < 0.001))
         {
             coinObject.SetActive(false);
